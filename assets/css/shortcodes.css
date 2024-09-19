@@ -568,6 +568,7 @@
 .team-member.style-3:hover:before,
 .team-member.style-3:hover:after {
     width: 30%;
+    background-color: #f33047;
 }
 
 .team-member.style-3 .team-description {
@@ -2624,7 +2625,7 @@
 }
 
 .section-title h6 {
-    padding: 15px 0 15px 15px;
+    padding: 15px 0;
     position: relative;
     display: inline-block;
     font-weight: 600;
@@ -2719,7 +2720,7 @@
 .title-effect-2 .ellipse {
     width: 100%;
     height: 100%;
-    background: #2575fc;
+    background: #f33047 !important;
     border-radius: 50%;
     animation: ellipse-animation 2.4s cubic-bezier(0, -0.26, 0.32, 1.22) 0s infinite;
     transform: rotate(0deg);

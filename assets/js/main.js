@@ -350,5 +350,16 @@ $('.drp_btn').click(function(){
   // INITIALIZE AOS
   
   AOS.init();
+
+  function loadHTML(files) {
+    files.forEach(file => {
+      fetch(file.url)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(file.id).innerHTML = data;
+        })
+        .catch(error => console.error('Error loading file:', error));
+    });
+  }
   
   

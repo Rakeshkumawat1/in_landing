@@ -68,7 +68,8 @@
 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+<body data-bs-spy="scroll" data-bs-target="#navbarNav"
+  onload="loadHTML([{id: 'header', url: './components/header.html'}, {id: 'footer', url: './components/footer.html'}]);">
 
   <!-- page wrapper start -->
 
@@ -104,132 +105,11 @@
       <span><img src="./anim_line.png" alt="anim_line"></span>
     </div> -->
 
-    <!--header start-->
-
-    <header id="site-header" class="header header-1">
-      <div class="container-fluid">
-        <div id="header-wrap" class="box-shadow fixed-header">
-          <div class="row">
-            <div class="col-lg-12">
-              <!-- Navbar -->
-              <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand logo" href="">
-                  <img id="logo-img" class="img-fluid" src="./assets/images/logo2.png" alt="">
-                  <!-- <img id="logo-img" class="img-fluid" src="./aditional-files/logo-color-6.png" alt=""> -->
-                </a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                  aria-label="Toggle navigation"> <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navbarNav">
-                  <!-- Left nav -->
-                  <ul class="nav navbar-nav mx-auto">
-                    <!-- Home -->
-                    <li class="nav-item"> <a class="nav-link active" href="home">Home</a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link" href="about">About</a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link" href="service">Services</a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link" href="team">Team</a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link" href="pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item"> <a class="nav-link" href="blog">Blog</a>
-                    </li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href=""
-                        data-bs-toggle="dropdown">Pages</a>
-                      <ul class="dropdown-menu">
-                        <li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href="">About Us</a>
-                          <ul class="dropdown-menu">
-                            <li><a href="">About Us 1</a>
-                            </li>
-                            <li><a href="">About Us 2</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href="">Services</a>
-                          <ul class="dropdown-menu">
-                            <li><a href="">Service 1</a>
-                            </li>
-                            <li><a href="">Service 2</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="">Team</a>
-                        </li>
-                        <li><a href="">Team Single</a>
-                        </li>
-                        <li><a href="">Faq</a>
-                        </li>
-                        <li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href="">Blogs</a>
-                          <ul class="dropdown-menu">
-                            <li><a href="">Blog Grid 2</a>
-                            </li>
-                            <li><a href="">Blog Left
-                                Sidebar</a>
-                            </li>
-                            <li><a href="">Blog
-                                Right Sidebar</a>
-                            </li>
-                            <li><a href="">Blog Single</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href="">Element</a>
-                          <ul class="dropdown-menu">
-                            <li><a href="">Accordion</a>
-                            </li>
-                            <li><a href="">Blog
-                                Post</a>
-                            </li>
-                            <li><a href="">Counter</a>
-                            </li>
-                            <li><a href="">Featured
-                                Box</a>
-                            </li>
-                            <li><a href="">Pricing
-                                Table</a>
-                            </li>
-                            <li><a href="">Team</a>
-                            </li>
-                            <li><a href="">Testimonials</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="dropdown dropdown-submenu"><a class="dropdown-toggle" href="">Contact us</a>
-                          <ul class="dropdown-menu">
-                            <li><a href="">Contact 1</a>
-                            </li>
-                            <li><a href="">Contact 2</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href="">Coming Soon</a>
-                        </li>
-                        <li><a href="">Error 404</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                <a class="btn btn-theme" href="" data-text="GET STARTED"> GET STARTED
-                </a>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!--header end-->
-
+    <div id="header"></div>
 
     <!--hero section start-->
 
-<!-- change color bg with #fdf7f5 -->
+    <!-- change color bg with #fdf7f5 -->
     <section id="home" class="fullscreen-banner banner p-0 bg-contain bg-pos-rt"
       data-bg-img="/assets/images/shapes/main-page-section1.png"
       style="height: 897px; background-image: url(&quot;assets/images/shapes/main-page-section1.png&quot;);">
@@ -2662,166 +2542,12 @@
 
       <!--testimonial end-->
 
-
-      <!--footer start-->
-
-      <footer class="footer footer-1 position-relative" data-bg-img="images/bg/05.png"
-        style="background-image: url(&quot;images/bg/05.png&quot;);">
-        <div class="subscribe-box">
-          <div class="container">
-            <div class="row subscribe-inner align-items-center">
-              <div class="col-md-6 col-sm-12">
-                <h4>Connet with us</h4>
-                <p class="lead mb-0">Get insights, tips, and special offers delivered to your inbox.</p>
-              </div>
-              <div class="col-md-6 col-sm-12 mt-3 mt-md-0">
-                <div class="subscribe-form">
-                  <form id="mc-form" class="group">
-                    <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address"
-                      required="">
-                    <input class="btn btn-theme" type="submit" name="subscribe" value="Subscribe">
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="primary-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4 col-md-6">
-                <div class="footer-logo">
-                  <img id="footer-logo-img" src="./assets/images/logo2.png" class="img-fluid" alt="">
-                </div>
-                <p class="mb-0">Transform your ideas into reality with Incredible Code. We specialize in crafting
-                  tailored software solutions and stunning designs to meet your unique needs.</p>
-              </div>
-              <div class="col-lg-4 col-md-6 ps-md-5 mt-5 mt-md-0 footer-list justify-content-between d-flex">
-                <ul class="list-unstyled w-100">
-                  <li><a href="">About Us</a>
-                  </li>
-                  <li><a href="">Service</a>
-                  </li>
-                  <li><a href="">Team</a>
-                  </li>
-                  <li><a href="">Team Single</a>
-                  </li>
-                  <li><a href="">Contact Us</a>
-                  </li>
-                </ul>
-                <ul class="list-unstyled w-100">
-                  <li><a href="">Blog</a>
-                  </li>
-                  <li><a href="">Faq</a>
-                  </li>
-                  <li><a href="">Error 404</a>
-                  </li>
-                  <li><a href="">Privacy Policy</a>
-                  </li>
-                  <li><a href="">Terms</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-4 col-md-12 mt-5 mt-lg-0">
-                <ul class="media-icon list-unstyled">
-                  <li class="me-2"><a href=""><i class="fab fa-twitter"></i> X</a>
-                  </li>
-                  <li class="me-2"><a href="https://www.facebook.com/profile.php?id=61565138985710"><i
-                        class="fab fa-facebook-f"></i> Facebook</a>
-                  </li>
-                  <li><a href="https://www.linkedin.com/company/incrediblecode/"><i class="fab fa-linkedin"></i>
-                      Linkedin</a>
-                  </li>
-                  <li><a href="https://www.instagram.com/incrediblecode.in/"><i class="fab fa-instagram"></i>
-                      Instagram</a>
-                  </li>
-                  <li>Email: <a href="mailto:themeht23@gmail.com"><b>connect@incrediblecode.in</b></a>
-                  </li>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="secondary-footer">
-          <div class="container">
-            <div class="copyright">
-              <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12"> <span>Copyright 2024 <u><a href="">Incredible Code</a></u> | All
-                    Rights
-                    Reserved</span>
-                </div>
-                <!--  <div class="col-lg-6 col-md-12 text-lg-end mt-3 mt-lg-0">
-                <div class="footer-social">
-                  <ul class="list-inline">
-                    <li class="me-2"><a href="https://www.facebook.com/profile.php?id=61565138985710"><i
-                          class="fab fa-facebook-f"></i> Facebook</a>
-                    </li>
-                    <li class="me-2"><a href=""><i class="fab fa-twitter"></i> Twitter</a>
-                    </li>
-                    <li><a href="https://www.linkedin.com/company/incrediblecode/"><i class="fab fa-linkedin"></i>
-                        Linkedin</a>
-                    </li>
-                    <li><a href="https://www.instagram.com/incrediblecode.in/"><i class="fab fa-instagram"></i>
-                        Instagram</a>
-                    </li>
-                  </ul>
-                </div>
-              </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      <!--footer end-->
-
+      <!-- Imported footer -->
+      <div id="footer"></div>
 
     </div>
 
     <!-- page wrapper end -->
-
-
-    <!--color-customizer start-->
-
-    <!--  <div class="color-customizer closed" style="right: -250px;">
-    <div class="color-button">
-      <a class="opener" href=""> <i
-          class="fas fa-spinner fa-spin"></i>
-      </a>
-    </div>
-    <div class="clearfix color-chooser text-center">
-      <h4 class="text-theme font-w-8 mb-4">Softino With <span class="text-black font-w-5">Awesome Colors</span></h4>
-      <ul class="colorChange clearfix">
-        <li class="theme-default" title="theme-default" data-style="color-1"></li>
-        <li class="theme-2" title="theme-2" data-style="color-2"></li>
-        <li class="theme-3" title="theme-3" data-style="color-3"></li>
-        <li class="theme-4" title="theme-4" data-style="color-4"></li>
-        <li class="theme-5" title="theme-5" data-style="color-5"></li>
-        <li class="theme-6 selected" title="theme-6" data-style="color-6"></li>
-      </ul>
-      <div class="text-center mt-4">
-        <a class="btn btn-theme btn-circle" href=""
-          data-text="Purchase Now">
-          <span>P</span><span>u</span><span>r</span><span>c</span><span>h</span><span>a</span><span>s</span><span>e</span>
-          <span> </span><span>N</span><span>o</span><span>W</span>
-        </a>
-      </div>
-    </div>
-  </div> -->
-
-    <!--color-customizer end-->
-
-
-    <!--back-to-top start-->
-    <!-- 
-  <div class="scroll-top scroll-visible"><a class="smoothscroll" href=""><i class="fa-solid fa-scroll"></i></a>
-  </div> -->
-
-    <!--back-to-top end-->
-
-
-    <!-- inject js start -->
 
     <!--== jquery -->
     <script src="./assets/js/theme.js"></script>
