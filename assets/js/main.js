@@ -362,3 +362,44 @@ function loadHTML(files) {
   });
 }
 
+function loadHTML(components, callback) {
+  let loadedCount = 0;
+
+  components.forEach(component => {
+    fetch(component.url)
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById(component.id).innerHTML = html;
+        loadedCount++;
+        if (loadedCount === components.length && callback) {
+          callback(); 
+        }
+      })
+      .catch(error => {
+        console.error(`Error loading component: ${component.url}`, error);
+      });
+  });
+}
+
+window.onload = () => {
+  loadHTML(
+    [
+      { id: 'header', url: './components/header.html' },
+      { id: 'footer', url: './components/footer.html' }
+    ],
+    () => {
+      const currentPath = window.location.pathname;
+      const navLinks = document.querySelectorAll('.nav-link');
+
+
+      navLinks.forEach(link => {
+        if (("/" + link.getAttribute('href')) === currentPath) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
+  );
+};
+
